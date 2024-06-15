@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables"
+@import "components"
+@import "bootstrap/scss/bootstrap.scss"
+
+// Define a mixin using Font Awesome icon
+@mixin icon($icon)
+  @extend .icon
+  content: $icon
+
+
+
+// Define a class using Font Awesome icon
+.icon
+  font-family: 'Font Awesome 5 Free', poppins, sans-serif // Ensure the correct font family nam
+
